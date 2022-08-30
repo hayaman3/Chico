@@ -2,14 +2,28 @@ import './style.css';
 // import Icon from './icon.png';
 
 const content = document.getElementById("content")
-function component() {
-    const element = document.createElement("main");
+const element = document.createElement("main")
+function home(){
+    element.classList.add("home")
     element.innerHTML = `
 
-            <div>Chico</div>
-            <div>chicken & coffee</div>
+            <header>CHICO</header>
+            <p><u>Chi</u>cken & <u>Co</u>ffee</p>
 
     `;
-    return element;
+    content.appendChild(element)
 }
-content.appendChild(component());
+
+home()
+
+function shop(){
+    element.classList.add("shop")
+    element.innerHTML = `
+
+            <div>Coffee Bag 1kg</div>
+
+    `;
+    content.appendChild(element)
+}
+
+// shop()
