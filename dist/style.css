@@ -15,7 +15,6 @@
 }
 
 body{
-    
     min-height: 100vh;
     margin:auto;
     display:flex;
@@ -77,12 +76,34 @@ a, a:hover, a:focus, a:active {
 }
 
 .content > .home > p{
-
     font-size: calc(12px + 1vw);
 }
+
 .content > .home > p >u{
     text-decoration-color: rgb(235, 73, 48);
 }
+/* shop || */
+.shop{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    color:var(--brown1)
+}
+
+.shop > img{
+    width:auto;
+    height: 350px;
+}
+.shop > #details{
+    font-size: 12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+/* .shop > #details > h3{
+    font-size: calc(12px + 1vw);
+} */
 
 footer{
     width: 100%;
@@ -92,7 +113,7 @@ footer{
     justify-content: center;
     text-align: center;
     gap:3vw;
-    padding-top:2%;
+    padding:1% 0;
     border-top: grey solid 1px;
     opacity: .8;
 }

@@ -1,29 +1,14 @@
-import './style.css';
-// import Icon from './icon.png';
+// import './style.css';
+import { getHomePage, getShopPage, getContactPage } from './content.js';
 
-const content = document.getElementById("content")
-const element = document.createElement("main")
-function home(){
-    element.classList.add("home")
-    element.innerHTML = `
 
-            <header>CHICO</header>
-            <p><u>Chi</u>cken & <u>Co</u>ffee</p>
+const homeNav = document.getElementById("home");
+const shopNav = document.getElementById("shop");
+const contactNav = document.getElementById("contact");
 
-    `;
-    content.appendChild(element)
-}
+homeNav.addEventListener("click",getHomePage)
+shopNav.addEventListener("click",getShopPage)
+contactNav.addEventListener("click",getContactPage)
 
-home()
-
-function shop(){
-    element.classList.add("shop")
-    element.innerHTML = `
-
-            <div>Coffee Bag 1kg</div>
-
-    `;
-    content.appendChild(element)
-}
-
-// shop()
+// getHomePage()
+getShopPage()
