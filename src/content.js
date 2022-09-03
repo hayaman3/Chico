@@ -22,11 +22,27 @@ function getShopPage(){
     element.className = "";
     element.classList.add("shop")
     element.innerHTML = `
-        <img src="../src/coffee.jpg" alt="coffee beans">
-        <div id="details">
-            <h4>Robusta Coffee</h4>
-            <p>Distinct woody and nutty taste</p>
+        <div class="card">
+            <img src="../src/coffee.jpg" alt="coffee beans">
+            <div id="details">
+                <h4>Robusta Coffee</h4>
+                <p>Distinct woody and nutty taste</p>
+                <div class="credit">
+                Photo by <a href="https://unsplash.com/@nadiavalko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadia Valko</a> on <a href="https://unsplash.com/s/photos/coffee-bag?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </div>
+            </div>
         </div>
+        <div class="card">
+            <img src="../src/chicken.jpg" alt="coffee beans">
+            <div id="details">
+                <h4>Fried Chicken</h4>
+                <p>Air Fried</p>
+            
+            <div class="credit">
+                Photo by <a href="https://unsplash.com/@christoffere?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christoffer Engström</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+            </div>
+        </div>    
     `;
     content.appendChild(element)
 }

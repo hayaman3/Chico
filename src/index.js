@@ -10,5 +10,4 @@ homeNav.addEventListener("click",getHomePage)
 shopNav.addEventListener("click",getShopPage)
 contactNav.addEventListener("click",getContactPage)
 
-// getHomePage()
-getShopPage()
+getHomePage()
